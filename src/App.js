@@ -23,7 +23,7 @@ render(){
   const filteredMonsters =  monster.filter(monst =>monst.name.toLowerCase().includes(search.toLowerCase()));
   return(
     <div className="App">
-      <h1>Monsters Rolosex</h1>
+      <h1>Monsters Rolodex</h1>
       <SearchBox  placeholder="search monster" handleChange={e =>this.setState({search :e.target.value})} />
       <CardList monster={filteredMonsters}>
       </CardList>
